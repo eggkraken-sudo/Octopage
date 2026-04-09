@@ -19,7 +19,7 @@ _______________________________________________________
 Detailed useage instructions TBA. 
 
 
-There is currently no audio filtering. In the meantime, use this table to apply low and high pass filters either before or after using Octopage. The Fairlight is set to FILTER LOW: 1 and FILTER HIGH: 9 by default. 
+There is currently no audio filtering. In the meantime, use this table to apply low and high pass filters either before or after using Octopage. The manual recommends setting FILTER HIGH to about half of the recording's sample rate. The Fairlight is set to FILTER LOW: 1 and FILTER HIGH: 9 by default. 
 
 FAIRLIGHT CMI SAMPLING FILTER FREQUENCIES (HZ)
 
