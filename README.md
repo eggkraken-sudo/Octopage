@@ -17,3 +17,35 @@ If you get "error: externally-managed-environment", add "--break-system-packages
 _______________________________________________________
 
 Detailed useage instructions TBA. 
+
+
+FAIRLIGHT CMI SAMPLING FILTER FREQUENCIES (HZ)
+
+FILTER LOW:
+
+| CMI SETTING   | FREQUENCY (HZ) |
+| ------------- | ------------- |
+| 1 | 18  |
+| 2 | 26  |
+| 3 | 37  |
+| 4 | 52  |
+| 5 | 73  |
+| 6 | 104  |
+| 7 | 147  |
+| 8 | 208  |
+| 9 | 294  |
+
+
+FILTER HIGH:
+
+| CMI SETTING   | FREQUENCY (HZ) |
+| ------------- | ------------- |
+| 1 | 600  |
+| 2 | 800  |
+| 3 | 1000  |
+| 4 | 2000  |
+| 5 | 3000  |
+| 6 | 4000  |
+| 7 | 6000  |
+| 8 | 8000  |
+| 9 | 12000  |
