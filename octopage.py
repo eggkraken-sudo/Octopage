@@ -147,6 +147,7 @@ def calculateFile():
         global defaultsamp
         original_file, sr = librosa.load(filename,mono=True,duration=5,sr=None)
         original_sr = librosa.get_samplerate(filename)
+        
         if original_sr == 30200 and errorshown == 0:
             error_message()
             errorshown = 1
@@ -161,7 +162,7 @@ def calculateFile():
             samplerate_entry.delete(0,END)
             samplerate_entry.insert(0,'30200')
         temp_file = librosa.resample(resampled_file,orig_sr=30200,target_sr=value)
-        temp_file = librosa.util.fix_length(temp_file, size=16634)#cut to correct file size
+        temp_file = librosa.util.fix_length(temp_file, size=16384)#cut to correct file size
         update()
         playback.config(state=NORMAL) #re-enables playback
         save.config(state=NORMAL) #enable saving now that there's something to save
@@ -259,10 +260,13 @@ hipassChoice = StringVar()
 
 note = ttk.OptionMenu(controlFrame, noteopt, note_options[1], *note_options)
 note.grid(row = 4, column = 2)
+
 octave = ttk.OptionMenu(controlFrame, oct_opt, oct_options[3], *oct_options)
 octave.grid(row = 4, column = 3)
+
 save = ttk.Button(controlFrame, text='Save Wav', state=DISABLED, command=saveFile) #disabled by default
 save.grid(row = 5, column = 1)
+
 samplerate_entry = ttk.Entry(b2, width=7, textvariable=targetSampleRate)
 samplerate_entry.grid(column=2, row=1, sticky=(N,S,E,W))
 
